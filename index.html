@@ -1,3 +1,7 @@
 <html>
-you still can find me at <a href="http://kyprizel.net">kyprizel.net</a>
+<p>you still can find me at <a href="http://kyprizel.net">kyprizel.net</a> and this is just a test</p>
+
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
 </html>
